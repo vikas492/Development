@@ -1,0 +1,64 @@
+.calculator {
+  width: 280px;
+  margin: 50px auto;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+
+/* Input */
+.input {
+  width: 90%;
+  height: 50px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+
+/* Operators row */
+.operators {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+/* Number grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+/* Buttons */
+.btn {
+  height: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: #dcdcdc;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* Operator style */
+.operator {
+  background-color: orange;
+  color: white;
+}
+
+.operator:hover {
+  background-color: darkorange;
+}
