@@ -13,7 +13,15 @@ function App() {
     function handleDecrease() {
  if(count === 0){
     setMessage("Count cannot be negative")
-    setTimeout(()=>{setMessage("")},2000)
+    useEffect(() => {
+      if (message){
+        const Timer = setTimeout(()=>{
+          setMessage("")
+        },2000)
+        return () => clearTimeout(Timer)
+      }
+        },[message])
+
  }else{
   setCount(prev => prev-1)
  }
